@@ -8,7 +8,7 @@ test:
   override:
     - mvn clean test
 deployment:
-  dev:
+  staging:
     branch: feature/*
     command:
       - ./sh/deploy_feature.sh
