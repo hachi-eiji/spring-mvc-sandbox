@@ -11,4 +11,4 @@ deployment:
   feature:
     branch: /feature.*/
     commands:
-      - ./sh/deploy_feature.sh
+      - sh ./sh/deploy_feature.sh
