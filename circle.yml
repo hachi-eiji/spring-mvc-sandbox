@@ -4,9 +4,6 @@ machine:
     Asia/Tokyo
   java:
     version: oraclejdk8
-dependencies:
-  cache_directories:
-    - ~/.m2
 test:
   override:
     - mvn clean test
