@@ -9,6 +9,6 @@ test:
     - mvn clean test
 development:
   dev:
-    branch: feauture/*
+    branch: feature/*
     command:
       - ./sh/deploy_feature.sh
