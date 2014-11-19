@@ -1,0 +1,10 @@
+## for circleCI configuration file
+machine:
+  timezone:
+    Asia/Tokyo
+  java:
+    version: oraclejdk8
+
+test:
+  override:
+    - mvn clean test
