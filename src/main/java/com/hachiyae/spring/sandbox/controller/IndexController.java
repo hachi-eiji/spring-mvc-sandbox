@@ -21,7 +21,6 @@ public class IndexController {
     @ResponseBody
     @RequestMapping(value = "/post", method = RequestMethod.POST)
     public Map<String, String[]> post(Model model, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        System.out.println(request.getParameterValues("bars[0][id]")[0]);
         return request.getParameterMap();
     }
 }
