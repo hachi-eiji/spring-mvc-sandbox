@@ -7,7 +7,7 @@ machine:
 test:
   override:
     - mvn clean test
-development:
+deployment:
   dev:
     branch: feature/*
     command:
