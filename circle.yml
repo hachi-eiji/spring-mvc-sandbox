@@ -6,7 +6,7 @@ machine:
     version: oraclejdk8
 dependencies:
   cache_directories:
-    - ${HOME}/.m2
+    - ~/.m2
 test:
   override:
     - mvn clean test
