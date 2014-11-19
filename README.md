@@ -1,4 +1,4 @@
 spring-mvc-sandbox
 ==================
 
-Spring MVC and Freemaker Sandbox
+Spring MVC and Freemarker Sandbox
