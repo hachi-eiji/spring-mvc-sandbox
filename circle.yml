@@ -25,10 +25,9 @@ dependencies:
 test:
   override:
     - cd "~/spring-mvc-sandbox/sh"
-    - fab mvn_test
+    - fab -f sh/fabfile mvn_test
 deployment:
   feature:
     branch: /feature.*/
     commands:
-      - cd "~/spring-mvc-sandbox/sh"
-      - fab mvn_deploy
+      - fab -f sh/fabfile mvn_deploy
