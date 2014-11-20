@@ -17,7 +17,8 @@ machine:
     TARGET_ENV: dev1
 general:
   artifacts:
-    - "~/${CIRCLE_PROJECT_REPONAME}/target/"
+    - "~/${CIRCLE_PROJECT_REPONAME}/target/*.war"
+    - "~/${CIRCLE_PROJECT_REPONAME}/target/*.jar"
 dependencies:
   pre:
     - pip install 'fabric==1.8.3' 'requests==2.2.1'
