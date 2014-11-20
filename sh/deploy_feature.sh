@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/sh -xe
 
-echo "execute!!!"
+echo "${TARGET_ENV} execute!!!"

@@ -10,6 +10,11 @@ machine:
     version: 2.1.3
   java:
     version: oraclejdk8
+  services:
+      - mysql
+      - memcached
+  environment:
+    TARGET_ENV: dev1
 dependencies:
   pre:
     - pip install 'fabric==1.8.3' 'requests==2.2.1'
