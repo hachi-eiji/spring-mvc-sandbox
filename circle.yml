@@ -24,11 +24,11 @@ dependencies:
     - pip install 'fabric==1.8.3' 'requests==2.2.1'
 test:
   override:
-    - cd "~/${CIRCLE_PROJECT_REPONAME}/sh"
+    - cd "~/spring-mvc/sh"
     - fab mvn_test
 deployment:
   feature:
     branch: /feature.*/
     commands:
-      - cd "~/${CIRCLE_PROJECT_REPONAME}/sh"
+      - cd "~/spring-mvc/sh"
       - fab mvn_deploy
