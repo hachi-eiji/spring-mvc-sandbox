@@ -15,6 +15,10 @@ machine:
       - memcached
   environment:
     TARGET_ENV: dev1
+general:
+  artifacts:
+    - "~/target/*.war"
+    - "~/target/*.jar"
 dependencies:
   pre:
     - pip install 'fabric==1.8.3' 'requests==2.2.1'
