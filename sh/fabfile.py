@@ -7,8 +7,8 @@ from fabric.state import env
 @task
 def mvn_test():
     local("mvn clean test")
-    print(green("mvn_test"))
+    print(green("finish test"))
 
 @task
 def mvn_deploy():
-    print(green("mvn_deploy"))
+    local("mvn clean package")
