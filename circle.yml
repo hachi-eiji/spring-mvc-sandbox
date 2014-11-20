@@ -24,9 +24,11 @@ dependencies:
     - pip install 'fabric==1.8.3' 'requests==2.2.1'
 test:
   override:
-    - mvn clean test
+    - cd sh
+    - fab mvn_test
 deployment:
   feature:
     branch: /feature.*/
     commands:
-      - sh ./sh/deploy_feature.sh
+      - cd sh
+      - fab mvn_deploy
