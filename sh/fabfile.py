@@ -13,6 +13,6 @@ def mvn_test():
 @task
 def mvn_deploy():
     print(green("{TARGET_ENV}".format(**os.environ)))
-    if os.environ["env"] is not None:
+    if "env" in os.environ:
         print(green("{env}".format(**os.environ)))
     local("mvn clean package")
