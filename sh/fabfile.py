@@ -3,6 +3,7 @@ from fabric.state import env
 from fabric.decorators import task
 from fabric.colors import *
 from fabric.state import env
+import os
 
 @task
 def mvn_test():
@@ -11,5 +12,5 @@ def mvn_test():
 
 @task
 def mvn_deploy():
-    print(green("${TARGET_ENV}"))
+    print(green("{TARGET_ENV}".format(**os.environ)))
     local("mvn clean package")
