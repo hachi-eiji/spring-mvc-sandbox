@@ -11,4 +11,5 @@ def mvn_test():
 
 @task
 def mvn_deploy():
+    print(green("${TARGET_ENV}"))
     local("mvn clean package")
