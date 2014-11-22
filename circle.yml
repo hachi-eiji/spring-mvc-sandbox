@@ -21,7 +21,6 @@ general:
     - "~/${CIRCLE_PROJECT_REPONAME}/target/*.jar"
 dependencies:
   pre:
-    - ls -ltR ~/.m2/
     - pip install 'fabric==1.8.3' 'requests==2.2.1'
 test:
   override:
